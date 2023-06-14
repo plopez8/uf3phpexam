@@ -1,6 +1,5 @@
 <?php
 require_once "includes/db.php";
-print_r($_REQUEST);
 if($_REQUEST['participant']==$_REQUEST['assegurador'])
 {
     header("Location: assoliments.php");

@@ -24,9 +24,7 @@ require_once "includes/db.php";
                 <?php
                 $db = DB::get_instance();
                 $participants = $db->get_participants();
-                print_r($participants);
                 foreach ($participants as $p){
-                    print_r($p);
                     $nom = $p["nom"];
                     $cog = $p["cognom"];
                     $ema = $p["email"];
@@ -43,7 +41,6 @@ require_once "includes/db.php";
                 <?php
                 $db = DB::get_instance();
                 $via = $db->get_via();
-                print_r($via);
                 foreach ($via as $v){
                     $nom = $v["nom"];
                     $sec = $v["sector"];
@@ -69,9 +66,7 @@ require_once "includes/db.php";
                 <?php
                 $db = DB::get_instance();
                 $participants = $db->get_participants();
-                print_r($participants);
                 foreach ($participants as $p){
-                    print_r($p);
                     $nom = $p["nom"];
                     $cog = $p["cognom"];
                     $ema = $p["email"];
