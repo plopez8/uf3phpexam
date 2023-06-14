@@ -3,15 +3,15 @@ require_once "includes/db.php";
 $db = DB::get_instance();
 
 if (isset($_POST['eliminar_assoliments'])) {
-    $db->eliminar_assoliments();
+    $db->delete_assoliments();
 }
 
 if (isset($_POST['eliminar_participants'])) {
-    $db->eliminar_participants();
+    $db->delete_participants();
 }
 
 if (isset($_POST['borrar_vies_sectors'])) {
-    $db->borrar_vies_sectors();
+    $db->delete_vies_sectors();
 }
 
 if (isset($_POST['introduir_sectors_vies'])) {
